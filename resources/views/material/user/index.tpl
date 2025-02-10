@@ -431,12 +431,12 @@
                                                     <a class="copy-text btn-dl" data-clipboard-text="{$subInfo['clash']}"><i class="material-icons icon-sm">send</i> 拷贝订阅链接</a>
                                                 </p>
                                                 <hr/>
-                                                <p><span class="icon icon-lg text-white">filter_4</span> [ SingBox ]：
-                                                    <a class="copy-text btn-dl" data-clipboard-text="" aria-disabled="true"><i class="material-icons icon-sm">send</i> 拷贝订阅链接</a>
-                                                </p>
-                                                <hr/>
-                                                <p><span class="icon icon-lg text-white">filter_4</span> [ Trojan ]：
+                                                <p><span class="icon icon-lg text-white">filter_2</span> [ Trojan ]：
                                                     <a class="copy-text btn-dl" data-clipboard-text="{$subInfo['trojan']}"><i class="material-icons icon-sm">send</i> 拷贝订阅链接</a>
+                                                </p>
+                                                <hr/> 
+                                                <p><span class="icon icon-lg text-white">filter_3</span> [ SingBox(不可用) ]：
+                                                    <a class="copy-text btn-dl" data-clipboard-text="" aria-disabled="true"><i class="material-icons icon-sm">send</i> 拷贝订阅链接</a>
                                                 </p>
                                             </div>
                                             <div class="tab-pane fade" id="sub_center_windows">
@@ -496,7 +496,7 @@
                                                         <a class="btn-dl" href="clash://install-config?url={urlencode($subInfo['clash'])}"><i class="material-icons icon-sm">send</i> 配置一键导入</a>
                                                     </p>
                                                 <hr/>
-                                                <p><span class="icon icon-lg text-white">filter_1</span> Netch：</p>
+                                                <p><span class="icon icon-lg text-white">filter_2</span> Netch：</p>
                                                     <p>
                                                         应用下载：
                                                         <a class="btn-dl" href="/clients/Netch.exe"><i class="material-icons icon-sm">cloud_download</i> 本站下载</a>
@@ -635,7 +635,7 @@
                                                     -->
                                                 <hr/>
                                                 <p><span class="icon icon-lg text-white">filter_2</span> QuantumultX - [ SS/SSR/VMess/Trojan ]：</p>
-                                                    <p>该客户端专属订阅链接支持同时订阅 SS/SSR/V2Ray/Trojan 节点.</p>
+                                                    <p>该客户端专属订阅链接支持同时订阅 Trojan/V2Ray 节点.</p>
                                                     <p>
                                                         应用下载：
                                                         <a class="btn-dl" href="https://apps.apple.com/us/app/quantumult-x/id1443988620"><i class="material-icons icon-sm">cloud_download</i> 官方下载</a>
@@ -650,7 +650,7 @@
                                                     </p>
                                                 <hr/>
                                                 <p><span class="icon icon-lg text-white">filter_3</span> Shadowrocket - [ SS/SSR/VMess/Trojan ]：</p>
-                                                    <p>该客户端专属订阅链接支持同时订阅 SS/SSR/V2Ray 节点.</p>
+                                                    <p>该客户端专属订阅链接支持同时订阅 Trojan/V2Ray 节点.</p>
                                                     <p>
                                                         应用下载：
                                                         <a class="btn-dl" href="https://itunes.apple.com/us/app/shadowrocket/id932747118?mt=8"><i class="material-icons icon-sm">cloud_download</i> 官方下载</a>
