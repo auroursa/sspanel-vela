@@ -117,6 +117,11 @@ class UserController extends BaseController
                     $user_raw->port = ($user_raw->port + $muPort['type']);
                 }
             }
+            if ($user_raw->node_speedlimit != 0 && $node->node_speedlimit != 0) {
+                $user_raw->node_speedlimit = min($user_raw->node_speedlimit, $node->node_speedlimit);
+            } else {
+                $user_raw->node_speedlimit = max($user_raw->node_speedlimit, $node->node_speedlimit);
+            }            
             $user_raw = Tools::keyFilter($user_raw, $key_list);
             $users[] = $user_raw;
         }
