@@ -457,6 +457,7 @@ DOMAIN-SUFFIX,twitpic.com,境外流量
 DOMAIN-SUFFIX,twitter.com,境外流量
 DOMAIN-SUFFIX,twitter.jp,境外流量
 DOMAIN-SUFFIX,vine.co,境外流量
+DOMAIN-SUFFIX,x.com,境外流量
 # > Wikimedia Foundation
 DOMAIN-SUFFIX,mediawiki.org,境外流量
 DOMAIN-SUFFIX,wikibooks.org,境外流量
@@ -477,6 +478,9 @@ DOMAIN,search.yahoo.co.jp,境外流量
 # > Yandex
 DOMAIN-SUFFIX,yadi.sk,境外流量
 DOMAIN,disk.yandex.com,境外流量
+# > EHentai
+DOMAIN-SUFFIX,exhentai.org,境外流量
+DOMAIN-SUFFIX,e-hentai.org,境外流量
 
 # (Region-Restricted Access Denied)
 DOMAIN-SUFFIX,aicoin.com,境外流量
