@@ -479,12 +479,12 @@ DOMAIN,search.yahoo.co.jp,境外流量
 DOMAIN-SUFFIX,yadi.sk,境外流量
 DOMAIN,disk.yandex.com,境外流量
 # > EHentai
-DOMAIN-SUFFIX,e-hentai.org
-DOMAIN-SUFFIX,ehgt.org
-DOMAIN-SUFFIX,ehwiki.org
-DOMAIN-SUFFIX,exhentai.org
-DOMAIN-SUFFIX,hath.network
-DOMAIN-SUFFIX,hentaiverse.org
+DOMAIN-SUFFIX,e-hentai.org,境外流量
+DOMAIN-SUFFIX,ehgt.org,境外流量
+DOMAIN-SUFFIX,ehwiki.org,境外流量
+DOMAIN-SUFFIX,exhentai.org,境外流量
+DOMAIN-SUFFIX,hath.network,境外流量
+DOMAIN-SUFFIX,hentaiverse.org,境外流量
 
 # (Region-Restricted Access Denied)
 DOMAIN-SUFFIX,aicoin.com,境外流量
