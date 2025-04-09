@@ -450,12 +450,12 @@ $_ENV['Clash_Profiles'] = [
         'DNS' => [
             'enable'              => true,
             'ipv6'                => false,
-            'listen'              => '0.0.0.0:53',
+            'listen'              => '127.0.0.53:53',
             'enhanced-mode'       => 'fake-ip',
             'fake-ip-range'       => '198.18.0.1/16',
             'nameserver'=>[
-                '119.29.29.29',
-                '1.1.1.1'
+                'https://doh.pub/dns-query',
+                'https://1.1.1.1/dns-query'
             ],
             'fallback'=>[
                 '114.114.114.114',
@@ -687,6 +687,7 @@ $_ENV['Surfboard_Profiles'] = [
         'Checks' => [],
         'General' => [
             'loglevel'   => 'notify',
+            'doh-server' => 'https://doh.pub/dns-query, https://1.1.1.1/dns-query',
             'dns-server' => 'system, 119.29.29.29, 1.1.1.1',
             'skip-proxy' => '127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8, localhost, *.local, *.crashlytics.com',
         ],
