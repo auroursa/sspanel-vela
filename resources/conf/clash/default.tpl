@@ -855,6 +855,29 @@
   - DOMAIN-SUFFIX,apple-relay.apple.com,Apple_API
   - DOMAIN-SUFFIX,apple-relay.cloudflare.com,Apple_API
 
+  # > Steam Api - Pre
+  - DOMAIN,images.steamusercontent.com,Steam_API
+  - DOMAIN,avatars.cloudflare.steamstatic.com,Steam_API
+  - DOMAIN,avatars.fastly.steamstatic.com,Steam_API
+  - DOMAIN,avatars.akamai.steamstatic.com,Steam_API
+  - DOMAIN,avatars.steamstatic.com,Steam_API
+  - DOMAIN,community.akamai.steamstatic.com,Steam_API
+  - DOMAIN,community.cloudflare.steamstatic.com,Steam_API
+  - DOMAIN,community.fastly.steamstatic.com,Steam_API
+  - DOMAIN,community.steamstatic.com,Steam_API
+  - DOMAIN,shared.akamai.steamstatic.com,Steam_API
+  - DOMAIN,shared.cloudflare.steamstatic.com,Steam_API
+  - DOMAIN,shared.fastly.steamstatic.com,Steam_API
+  - DOMAIN,shared.steamstatic.com,Steam_API
+  - DOMAIN,store.akamai.steamstatic.com,Steam_API
+  - DOMAIN,store.cloudflare.steamstatic.com,Steam_API
+  - DOMAIN,store.fastly.steamstatic.com,Steam_API
+  - DOMAIN,store.steamstatic.com,Steam_API
+  - DOMAIN,video.akamai.steamstatic.com,Steam_API
+  - DOMAIN,video.cloudflare.steamstatic.com,Steam_API
+  - DOMAIN,video.fastly.steamstatic.com,Steam_API
+  - DOMAIN,video.steamstatic.com,Steam_API
+
   # > Steam CDN
   - DOMAIN-SUFFIX,steamusercontent.com,Steam_CDN
   - DOMAIN-SUFFIX,steamcontent.com,Steam_CDN
@@ -882,7 +905,7 @@
   - DOMAIN-SUFFIX,steamserver.net,Steam_CDN
   - DOMAIN-SUFFIX,steam-chat.com,Steam_CDN
 
-  # > Steam API
+  # > Steam API - After
   - DOMAIN-SUFFIX,steamcommunity.com,Steam_API
   - DOMAIN-SUFFIX,steampowered.com,Steam_API
   - DOMAIN-SUFFIX,steamgames.com,Steam_API
