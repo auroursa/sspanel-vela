@@ -877,6 +877,18 @@
   - DOMAIN,video.cloudflare.steamstatic.com,Steam_API
   - DOMAIN,video.fastly.steamstatic.com,Steam_API
   - DOMAIN,video.steamstatic.com,Steam_API
+  - DOMAIN,cdn.cloudflare.steamstatic.com,Steam_API
+  - DOMAIN,cdn.fastly.steamstatic.com,Steam_API
+  - DOMAIN,cdn.akamai.steamstatic.com,Steam_API
+  - DOMAIN,cdn.steamstatic.com,Steam_API
+  - DOMAIN,clan.cloudflare.steamstatic.com,Steam_API
+  - DOMAIN,clan.fastly.steamstatic.com,Steam_API
+  - DOMAIN,clan.akamai.steamstatic.com,Steam_API
+  - DOMAIN,clan.steamstatic.com,Steam_API
+  - DOMAIN,media.cloudflare.steamstatic.com,Steam_API
+  - DOMAIN,media.fastly.steamstatic.com,Steam_API
+  - DOMAIN,media.akamai.steamstatic.com,Steam_API
+  - DOMAIN,media.steamstatic.com,Steam_API
 
   # > Steam CDN
   - DOMAIN-SUFFIX,steamusercontent.com,Steam_CDN
