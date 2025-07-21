@@ -14,7 +14,6 @@
                         <div class="card">
                             <div class="card-main">
                                 <div class="card-inner">
-                                    <p>注意：部分节点实际上传流量和实际下载流量相反。</p>
                                     <p>此处实际流量与您运营商计算方式不同，可能会略微小于运营商的计费流量，仅供参考。</p>
                                 </div>
                             </div>

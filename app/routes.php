@@ -36,7 +36,7 @@ return function (SlimApp $app) {
         $this->get('/disable',                  App\Controllers\UserController::class . ':disable');
 
         $this->get('/node',                     App\Controllers\User\NodeController::class . ':user_node_page');
-        $this->get('/node/{id}/ajax',           App\Controllers\User\NodeController::class . ':user_node_ajax');
+        // $this->get('/node/{id}/ajax',           App\Controllers\User\NodeController::class . ':user_node_ajax'); // 已弃用
         $this->get('/node/{id}',                App\Controllers\User\NodeController::class . ':user_node_info');
 
         $this->get('/detect',                   App\Controllers\UserController::class . ':detect_index');

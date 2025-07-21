@@ -95,7 +95,7 @@
                                     </div>
                                     <div class="nodestatus">
                                         <div class="{if $node['online'] == '1'}nodeonline{elseif $node['online'] == '0'}nodeunset{else}nodeoffline{/if}">
-                                            <i class="material-icons">{if $node['online']=='1'}cloud_queue{elseif $node['online']=='0'}wifi_off{else}flash_off{/if}</i>
+                                            <i class="material-icons">{if $node['online']=='1'}cloud_done{elseif $node['online']=='0'}hourglass_empty{else}cloud_off{/if}</i>
                                         </div>
                                     </div>
                                 </div>
@@ -145,7 +145,7 @@
                                             <div data-toggle="tile" data-target="#heading{$node['id']}">
                                                 <div class="tile-side pull-left" data-ignore="tile">
                                                     <div class="avatar avatar-sm {if $node['online']=='1'}nodeonline{elseif $node['online']=='0'}nodeunset{else}nodeoffline{/if}">
-                                                        <span class="material-icons">{if $node['online']=='1'}cloud_queue{elseif $node['online']=='0'}wifi_off{else}flash_off{/if}</span>
+                                                        <span class="material-icons">{if $node['online']=='1'}cloud_done{elseif $node['online']=='0'}hourglass_empty{else}cloud_off{/if}</span>
                                                     </div>
                                                 </div>
                                                 <div class="tile-inner">
@@ -213,13 +213,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <script>
-                                                        $().ready(function () {
-                                                            $('#heading{$node['id']}').on("shown.bs.tile", function () {
-                                                                $("#info{$index++}").load("/user/node/{$node['id']}/ajax");
-                                                            });
-                                                        });
-                                                    </script>
                                                 </div>
                                             </div>
                                         </div>

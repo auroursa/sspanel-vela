@@ -38,7 +38,7 @@
                         <div class="card-main">
                             <div class="dropdown btn-group">
                                 <a href="javascript:void(0);" type="button" class="btn btn-dropdown-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  点此选择商品类型 <span class="caret"></span>
+                                  >选择商品类型 <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
                                   <li class="order-type"><a href="javascript:void(0)" id="orders">套餐购买</a></li>

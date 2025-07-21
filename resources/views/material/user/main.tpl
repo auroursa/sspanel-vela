@@ -9,7 +9,7 @@
     <!-- css -->
     <link href="/theme/material/css/base.min.css" rel="stylesheet">
     <link href="/theme/material/css/project.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/theme/material/css/user.min.css">
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -65,7 +65,7 @@
                     <a class="waves-attach" data-toggle="collapse" href="#ui_menu_me">我的</a>
                     <ul class="menu-collapse collapse in" id="ui_menu_me">
                         <li>
-                            <a href="/user"><i class="icon icon-lg">account_balance_wallet</i>&nbsp;用户中心</a>
+                            <a href="/user"><i class="icon icon-lg">home</i>&nbsp;用户中心</a>
                         </li>
                         <li>
                             <a href="/user/profile"><i class="icon icon-lg">account_box</i>&nbsp;账户信息</a>
@@ -74,7 +74,7 @@
                             <a href="/user/edit"><i class="icon icon-lg">edit</i>&nbsp;资料编辑</a>
                         </li>
                         <li>
-                            <a href="/user/traffic_log"><i class="icon icon-lg">table_chart_view</i>&nbsp;流量图表</a>
+                            <a href="/user/traffic_log"><i class="icon icon-lg">analytics</i>&nbsp;流量图表</a>
                         </li>
                         {if $config['subscribeLog']===true && $config['subscribeLog_show']===true}
                         <li>
@@ -111,10 +111,10 @@
                             <a href="/user/code"><i class="icon icon-lg">code</i>&nbsp;充值</a>
                         </li>
                         <li>
-                            <a href="/user/shop"><i class="icon icon-lg">shop</i>&nbsp;套餐购买</a>
+                            <a href="/user/shop"><i class="icon icon-lg">shop</i>&nbsp;商店</a>
                         </li>
                         <li>
-                            <a href="/user/bought"><i class="icon icon-lg">shopping_cart</i>&nbsp;购买记录</a>
+                            <a href="/user/bought"><i class="icon icon-lg">shopping_cart</i>&nbsp;账单</a>
                         </li>
                         {if $config['enable_donate']===true}
                             <li>

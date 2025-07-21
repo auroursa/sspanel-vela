@@ -94,19 +94,20 @@ class NodeController extends UserController
      * @param Response  $response
      * @param array     $args
      */
-    public function user_node_ajax($request, $response, $args): ResponseInterface
-    {
-        $id           = $args['id'];
-        $point_node   = Node::find($id);
-        $prefix       = explode(' - ', $point_node->name);
-        return $response->write(
-            $this->view()
-                ->assign('point_node', $point_node)
-                ->assign('prefix', $prefix[0])
-                ->assign('id', $id)
-                ->display('user/node/nodeajax.tpl')
-        );
-    }
+    // 功能已弃用
+    // public function user_node_ajax($request, $response, $args): ResponseInterface
+    // {
+    //     $id           = $args['id'];
+    //     $point_node   = Node::find($id);
+    //     $prefix       = explode(' - ', $point_node->name);
+    //     return $response->write(
+    //         $this->view()
+    //             ->assign('point_node', $point_node)
+    //             ->assign('prefix', $prefix[0])
+    //             ->assign('id', $id)
+    //             ->display('user/node/nodeajax.tpl')
+    //     );
+    // }
 
     /**
      * @param Request   $request
