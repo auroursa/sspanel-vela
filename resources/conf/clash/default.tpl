@@ -290,7 +290,6 @@
   - DOMAIN-SUFFIX,widevine.com,境外流量
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,境外流量
   - DOMAIN-SUFFIX,zynamics.com,境外流量
-  - DOMAIN-KEYWORD,google,境外流量
   - DOMAIN-KEYWORD,.blogspot.,境外流量
   - DOMAIN-SUFFIX,goog,境外流量
   # > Apple

@@ -200,8 +200,8 @@ $_ENV['Surge_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量',
-                        '直接连接'
+                        '直接连接',
+                        '境外流量'
                     ]
                 ]
             ],
@@ -409,8 +409,8 @@ $_ENV['Surge2_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量',
-                        '直接连接'
+                        '直接连接',
+                        '境外流量'
                     ]
                 ]
             ],
@@ -638,8 +638,8 @@ $_ENV['Clash_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量',
-                        '直接连接'
+                        '直接连接',
+                        '境外流量'
                     ]
                 ]
             ],
@@ -861,8 +861,8 @@ $_ENV['Surfboard_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量',
-                        '直接连接'
+                        '直接连接',
+                        '境外流量'
                     ]
                 ]
             ],
