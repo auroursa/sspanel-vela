@@ -773,6 +773,9 @@ DOMAIN-SUFFIX,ytimg.com,YouTube
 DOMAIN,youtubei.googleapis.com,YouTube
 DOMAIN,yt3.ggpht.com,YouTube
 
+# > Google Extras
+DOMAIN-KEYWORD,google,境外流量
+
 # > Netflix
 DOMAIN-SUFFIX,netflix.com,Netflix
 DOMAIN-SUFFIX,netflix.net,Netflix
