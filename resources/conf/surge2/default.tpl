@@ -807,7 +807,7 @@ DOMAIN,p.bstarstatic.com,bilibili
 DOMAIN-KEYWORD,cn-hk-eq-bcache-,bilibili
 
 # > Apple Direct
-DOMAIN,api.smoot.apple.com,DIRECT
+# DOMAIN,api.smoot.apple.com,DIRECT
 DOMAIN,api.smoot.apple.cn,DIRECT
 DOMAIN,captive.apple.com,DIRECT
 DOMAIN,smp-device-content.apple.com,DIRECT
@@ -920,7 +920,15 @@ DOMAIN-SUFFIX,live.net,Microsoft
 DOMAIN-SUFFIX,livefilestore.com,Microsoft
 DOMAIN-SUFFIX,1dv.com,Microsoft
 
-  # > GPT相关
+# > GPT相关
+DOMAIN,apple-relay.apple.com,GPT
+DOMAIN,cp4.cloudflare.com,GPT
+DOMAIN,apple-relay.fastly-edge.com,GPT
+DOMAIN,apple-relay.cloudflare.com,GPT
+DOMAIN-SUFFIX,smoot.apple.com,GPT
+DOMAIN,guzzoni.apple.com,GPT
+DOMAIN,api.smoot.apple.com,Apple_API
+
 DOMAIN-SUFFIX,openai.com,GPT
 DOMAIN-SUFFIX,auth0.com,GPT
 DOMAIN-SUFFIX,bing.com,GPT
