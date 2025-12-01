@@ -966,6 +966,7 @@
   - DOMAIN-SUFFIX,chatgpt.com,GPT
   - DOMAIN-SUFFIX,claude.ai,GPT
   - DOMAIN-SUFFIX,anthropic.com,GPT
+  - DOMAIN,proactivebackend-pa.googleapis.com,GPT
 
   # > GitHub
   - DOMAIN-SUFFIX,github.blog,境外流量
