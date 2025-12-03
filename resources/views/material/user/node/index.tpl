@@ -207,12 +207,6 @@
                                                         </div>
                                                     </div>
 {*                                                *}{/if}
-                                                    <div class="card">
-                                                        <div class="card-main">
-                                                            <div class="card-inner" id="info{$index}">
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
