@@ -13,6 +13,10 @@
         <p>
             404, Not Found.
         </p>
+        <div style="margin-top: 30px;">
+            <a href="javascript:history.back()" class="btn" style="margin-right: 10px; padding: 10px 20px; background-color: #2196F3; color: white; text-decoration: none; border-radius: 4px; display: inline-block;">← Back</a>
+            <a href="/" class="btn" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 4px; display: inline-block;">Home →</a>
+        </div>
     </div>
 </div>
 </body>
