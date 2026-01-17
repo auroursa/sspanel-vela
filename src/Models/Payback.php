@@ -18,7 +18,7 @@ class Payback extends Model
         return $user;
     }
 
-    public function rebate($user_id, $order_amount)
+    public static function rebate($user_id, $order_amount)
     {
         $configs = Setting::getClass('invite');
         $user = User::where('id', $user_id)->first();
@@ -29,12 +29,12 @@ class Payback extends Model
         $rebate_ratio = $configs['rebate_ratio'];
         if ($invite_rebate_mode == 'continued') {
             // 不设限制
-            self::executeRebate($user_id, $gift_user_id, $order_amount);
+            Payback::executeRebate($user_id, $gift_user_id, $order_amount);
         } elseif ($invite_rebate_mode == 'limit_frequency') {
             // 限制返利次数
             $rebate_frequency = self::where('userid', $user_id)->count();
             if ($rebate_frequency < $configs['rebate_frequency_limit']) {
-                self::executeRebate($user_id, $gift_user_id, $order_amount);
+                Payback::executeRebate($user_id, $gift_user_id, $order_amount);
             }
         } elseif ($invite_rebate_mode == 'limit_amount') {
             // 限制返利金额
@@ -47,19 +47,19 @@ class Payback extends Model
                 ) {
                 $adjust_rebate = $configs['rebate_amount_limit'] - $total_rebate_amount;
                 if ($adjust_rebate > 0) {
-                    self::executeRebate($user_id, $gift_user_id, $order_amount, $adjust_rebate);
+                    Payback::executeRebate($user_id, $gift_user_id, $order_amount, $adjust_rebate);
                 }
             } else {
-                self::executeRebate($user_id, $gift_user_id, $order_amount);
+                Payback::executeRebate($user_id, $gift_user_id, $order_amount);
             }
         } elseif ($invite_rebate_mode == 'limit_time_range') {
             if (strtotime($user->reg_date) + $configs['rebate_time_range_limit'] * 86400 > time()) {
-                self::executeRebate($user_id, $gift_user_id, $order_amount);
+                Payback::executeRebate($user_id, $gift_user_id, $order_amount);
             }
         }
     }
 
-    public function executeRebate($user_id, $gift_user_id, $order_amount, $adjust_rebate = null)
+    public statiC function executeRebate($user_id, $gift_user_id, $order_amount, $adjust_rebate = null)
     {
         $gift_user = User::where('id', $gift_user_id)->first();
         $rebate_amount = $order_amount * Setting::obtain('rebate_ratio');
