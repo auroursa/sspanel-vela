@@ -34,21 +34,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-main">
-                            <div class="dropdown btn-group">
-                                <a href="javascript:void(0);" type="button" class="btn btn-dropdown-toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  >选择商品类型 <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li class="order-type"><a href="javascript:void(0)" id="orders">套餐购买</a></li>
-                                  <li class="order-type"><a href="javascript:void(0)" id="traffice-packages">流量包购买</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            <div data-areatype="orders">
+            <div class="shop-section">
+                <h3 style="margin: 20px 0 15px 0; font-size: 18px; font-weight: 500;">套餐购买</h3>
+                <div data-areatype="orders">
                 <div class="shop-flex">
                     {foreach $shops as $shop}
                     {if $shop->traffic_package() == 0}
@@ -166,8 +155,11 @@
                     {/if}
                     {/foreach}
                 </div>
+                </div>
             </div>
-            <div style="display: none;" data-areatype="trafficePackages">
+            <div class="shop-section" style="margin-top: 30px;">
+                <h3 style="margin: 20px 0 15px 0; font-size: 18px; font-weight: 500;">流量包购买</h3>
+                <div data-areatype="trafficePackages">
                 <div class="shop-table" style="display: flex">
                     {foreach $shops as $shop}
                     {if $shop->traffic_package() != 0}
@@ -191,6 +183,7 @@
                     </div>
                 {/if}
                 {/foreach}
+                </div>
                 </div>
             </div>
                 <div aria-hidden="true" class="modal modal-va-middle fade" id="coupon_modal" role="dialog"
@@ -337,16 +330,6 @@
             rotatrArrow(dropDownButton[i], arrows[i]);
             custDropdown(dropDownButton[i], dropDownArea[i]);
         }
-        //商品类型
-        let orderType = "orders"
-        let orders = $$.querySelectorAll('[data-areatype=orders]')
-        let trafficePackages = $$.querySelectorAll('[data-areatype=trafficePackages]')
-        let switchToOrders = new UIswitch('orders', trafficePackages, orders, 'flex', 'tempordertype');
-        switchToOrders.listenSwitch();
-        let switchToTrafficePackages = new UIswitch('traffice-packages', orders, trafficePackages, 'flex', 'tempordertype');
-        switchToTrafficePackages.listenSwitch();
-        switchToOrders.setDefault();
-        switchToTrafficePackages.setDefault();
     })();
     $("#coupon_input").click(function () {
         $.ajax({
