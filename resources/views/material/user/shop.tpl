@@ -264,6 +264,26 @@
                         </div>
                     </div>
                 </div>
+                <div aria-hidden="true" class="modal modal-va-middle fade" id="result" role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-xs">
+                        <div class="modal-content">
+                            <div class="modal-heading">
+                                <a class="modal-close" data-dismiss="modal">×</a>
+                                <h2 class="modal-title">提示</h2>
+                            </div>
+                            <div class="modal-inner">
+                                <p id="msg"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <p class="text-right">
+                                    <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal"
+                                            type="button">知道了
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 {include file='dialog.tpl'}
         </div>
     </div>
