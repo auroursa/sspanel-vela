@@ -158,5 +158,79 @@ document.addEventListener('DOMContentLoaded', function() {
 #notify-ann-modal .modal-dialog,
 #notify-sublog-modal .modal-dialog {
   margin: auto !important;
+  max-width: 95% !important;
+}
+
+/* 响应式调整 */
+@media (max-width: 576px) {
+  /* 超小屏幕（手机）*/
+  #notify-ann-modal .modal-dialog,
+  #notify-sublog-modal .modal-dialog {
+    width: 100% !important;
+    max-width: 90vw !important;
+    margin: 1rem auto !important;
+  }
+  
+  #notify-ann-modal .modal-content,
+  #notify-sublog-modal .modal-content {
+    border-radius: 0.3rem;
+  }
+  
+  #notify-ann-modal .modal-heading,
+  #notify-sublog-modal .modal-heading {
+    padding: 1rem !important;
+  }
+  
+  #notify-ann-modal .modal-inner,
+  #notify-sublog-modal .modal-inner {
+    padding: 1rem !important;
+    max-height: 60vh !important;
+    overflow-y: auto !important;
+  }
+  
+  #notify-ann-modal .modal-footer,
+  #notify-sublog-modal .modal-footer {
+    padding: 0.75rem !important;
+  }
+  
+  #notify-ann-modal .modal-title,
+  #notify-sublog-modal .modal-title {
+    font-size: 1rem !important;
+  }
+  
+  #notify-ann-modal p,
+  #notify-sublog-modal p {
+    font-size: 0.875rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  #notify-ann-modal .btn,
+  #notify-sublog-modal .btn {
+    font-size: 0.875rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  /* 极窄屏幕 */
+  #notify-ann-modal .modal-dialog,
+  #notify-sublog-modal .modal-dialog {
+    max-width: 85vw !important;
+  }
+  
+  #notify-ann-modal .modal-heading,
+  #notify-sublog-modal .modal-heading {
+    padding: 0.75rem !important;
+  }
+  
+  #notify-ann-modal .modal-title,
+  #notify-sublog-modal .modal-title {
+    font-size: 0.9rem !important;
+  }
+  
+  #notify-ann-modal p,
+  #notify-sublog-modal p {
+    font-size: 0.8rem !important;
+  }
 }
 </style>
