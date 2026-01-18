@@ -185,26 +185,6 @@ CREATE TABLE `detect_list` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `detect_log`
---
-
-DROP TABLE IF EXISTS `detect_log`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `detect_log` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `user_id` bigint(20) NOT NULL,
-  `list_id` bigint(20) NOT NULL,
-  `datetime` bigint(20) NOT NULL,
-  `node_id` int(11) NOT NULL,
-  `status` int(2) NOT NULL DEFAULT 0,
-  PRIMARY KEY (`id`),
-  KEY `detect_log_ibfk_5` (`node_id`),
-  CONSTRAINT `detect_log_ibfk_5` FOREIGN KEY (`node_id`) REFERENCES `node` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=17091 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
 -- Table structure for table `disconnect_ip`
 --
 
@@ -342,6 +322,27 @@ CREATE TABLE `node` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=107 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `detect_log`
+--
+
+DROP TABLE IF EXISTS `detect_log`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `detect_log` (
+                              `id` bigint(20) NOT NULL AUTO_INCREMENT,
+    `user_id` bigint(20) NOT NULL,
+    `list_id` bigint(20) NOT NULL,
+    `datetime` bigint(20) NOT NULL,
+    `node_id` int(11) NOT NULL,
+    `status` int(2) NOT NULL DEFAULT 0,
+    PRIMARY KEY (`id`),
+    KEY `detect_log_ibfk_5` (`node_id`),
+    CONSTRAINT `detect_log_ibfk_5` FOREIGN KEY (`node_id`) REFERENCES `node` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+    ) ENGINE=InnoDB AUTO_INCREMENT=17091 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 --
 -- Table structure for table `node_info`
@@ -733,12 +734,11 @@ CREATE TABLE `user_traffic_log` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9022628 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'SYSTEM') */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, @@GLOBAL.SQL_MODE) */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, @@GLOBAL.FOREIGN_KEY_CHECKS) */;
+/*!40014 SET UNIQUE_CHECKS=IFNULL(@OLD_UNIQUE_CHECKS, @@GLOBAL.UNIQUE_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=IFNULL(@OLD_CHARACTER_SET_CLIENT, @@GLOBAL.CHARACTER_SET_CLIENT) */;
+/*!40101 SET CHARACTER_SET_RESULTS=IFNULL(@OLD_CHARACTER_SET_RESULTS, @@GLOBAL.CHARACTER_SET_RESULTS) */;
+/*!40101 SET COLLATION_CONNECTION=IFNULL(@OLD_COLLATION_CONNECTION, @@GLOBAL.COLLATION_CONNECTION) */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, @@GLOBAL.SQL_NOTES) */;
