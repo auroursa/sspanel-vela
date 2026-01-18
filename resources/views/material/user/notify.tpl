@@ -2,7 +2,7 @@
 {* 公告提醒 *}
 {if $notifyAnn}
 <div aria-hidden="true" class="modal modal-va-middle fade" id="notify-ann-modal" role="dialog" tabindex="-1">
-  <div class="modal-dialog modal-xs">
+  <div class="modal-dialog modal-xs modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-heading">
         <a class="modal-close" data-dismiss="modal">×</a>
@@ -24,6 +24,7 @@
               type="button">确定
           </button>
         </p>
+        </br>
       </div>
     </div>
   </div>
@@ -33,7 +34,7 @@
 {* 订阅记录提醒 *}
 {if $notifySubLog}
 <div aria-hidden="true" class="modal modal-va-middle fade" id="notify-sublog-modal" role="dialog" tabindex="-1">
-  <div class="modal-dialog modal-xs">
+  <div class="modal-dialog modal-xs modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-heading">
         <a class="modal-close" data-dismiss="modal">×</a>
@@ -53,6 +54,7 @@
           <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" 
               type="button">确定
           </button>
+          </br>
         </p>
       </div>
     </div>
@@ -107,6 +109,8 @@ document.addEventListener('DOMContentLoaded', function() {
     annSwitch.addEventListener('change', function() {
       if (this.checked) {
         setCookie('noAnnTip', '{$notifyAnn.date}', 7);
+      } else {
+        setCookie('noAnnTip', '', -1);
       }
     });
   }
@@ -126,6 +130,8 @@ document.addEventListener('DOMContentLoaded', function() {
     sublogSwitch.addEventListener('change', function() {
       if (this.checked) {
         setCookie('noSubLogTip', '{$notifySubLog.last_time}', 7);
+      } else {
+        setCookie('noSubLogTip', '', -1);
       }
     });
   }
