@@ -84,11 +84,23 @@ function getCookie(name) {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  // 公告提醒
+  // 公告提醒 - 优先级更高
   {if $notifyAnn}
-  if(getCookie('noAnnTip') != '{$notifyAnn.date}') {
-    $("#notify-ann-modal").modal({ldelim}backdrop: true, keyboard: true{rdelim});
-  }
+  var showAnnNotification = function() {
+    if(getCookie('noAnnTip') != '{$notifyAnn.date}') {
+      var annModal = $("#notify-ann-modal");
+      annModal.modal({ldelim}backdrop: true, keyboard: true{rdelim});
+      
+      // 监听公告对话框关闭事件，关闭后再显示订阅通知
+      annModal.on('hidden.bs.modal', function() {
+        showSubLogNotification();
+      });
+    } else {
+      // 如果公告通知被跳过，直接显示订阅通知
+      showSubLogNotification();
+    }
+  };
+  
   var annSwitch = document.getElementById('ann_no_tip_switch');
   if (annSwitch) {
     annSwitch.checked = false;
@@ -99,11 +111,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   {/if}
-  // 订阅记录提醒
+  
+  // 订阅记录提醒 - 优先级较低
   {if $notifySubLog}
-  if(getCookie('noSubLogTip') != '{$notifySubLog.last_time}') {
-    $("#notify-sublog-modal").modal({ldelim}backdrop: true, keyboard: true{rdelim});
-  }
+  var showSubLogNotification = function() {
+    if(getCookie('noSubLogTip') != '{$notifySubLog.last_time}') {
+      $("#notify-sublog-modal").modal({ldelim}backdrop: true, keyboard: true{rdelim});
+    }
+  };
+  
   var sublogSwitch = document.getElementById('sublog_no_tip_switch');
   if (sublogSwitch) {
     sublogSwitch.checked = false;
@@ -113,6 +129,13 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+  {/if}
+  
+  // 启动通知流程 - 优先显示公告，然后订阅通知
+  {if $notifyAnn}
+  showAnnNotification();
+  {elseif $notifySubLog}
+  showSubLogNotification();
   {/if}
 });
 </script>
