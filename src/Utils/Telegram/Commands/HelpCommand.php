@@ -15,12 +15,12 @@ class HelpCommand extends Command
     /**
      * @var string Command Name
      */
-    protected $name = 'help';
+    protected string $name = 'help';
 
     /**
      * @var string Command Description
      */
-    protected $description = '[群组/私聊] 系统中可用的所有命令.';
+    protected string $description = '[群组/私聊] 系统中可用的所有命令.';
 
     /**
      * {@inheritdoc}

@@ -16,12 +16,12 @@ class SetuserCommand extends Command
     /**
      * @var string Command Name
      */
-    protected $name = 'setuser';
+    protected string $name = 'setuser';
 
     /**
      * @var string Command Description
      */
-    protected $description = '[群组/私聊] 修改用户数据，管理员命令.';
+    protected string $description = '[群组/私聊] 修改用户数据，管理员命令.';
 
     /**
      * {@inheritdoc}

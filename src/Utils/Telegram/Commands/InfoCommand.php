@@ -16,12 +16,12 @@ class InfoCommand extends Command
     /**
      * @var string Command Name
      */
-    protected $name = 'info';
+    protected string $name = 'info';
 
     /**
      * @var string Command Description
      */
-    protected $description = '[群组]     获取被回复消息的用户信息，管理员命令.';
+    protected string $description = '[群组]     获取被回复消息的用户信息，管理员命令.';
 
     /**
      * {@inheritdoc}
