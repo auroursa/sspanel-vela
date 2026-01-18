@@ -25,6 +25,7 @@
 </style>
 
 <main class="content">
+    {include file='user/notify.tpl'}
     <div class="content-header ui-content-header">
         <div class="container">
             <h1 class="content-heading">用户中心</h1>

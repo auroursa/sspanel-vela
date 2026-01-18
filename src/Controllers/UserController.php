@@ -124,6 +124,23 @@ class UserController extends BaseController
             'residual_flow' => ($this->user->transfer_enable==0) ? 0 : ($this->user->transfer_enable - ($this->user->u + $this->user->d)) / $this->user->transfer_enable * 100,
         ];
 
+        // 公告提醒逻辑
+
+        $notifyAnn = null;
+        $notifyAnnDays = isset($_ENV['notify_ann_days']) ? (int)$_ENV['notify_ann_days'] : null;
+        if ($notifyAnnDays !== null && $notifyAnnDays >= 0) {
+            $lastAnnDate = $_COOKIE['noAnnTip'] ?? null;
+            $notifyAnn = \App\Models\Notify::getAnnNotify($lastAnnDate, $notifyAnnDays);
+        }
+
+        // 订阅记录提醒逻辑
+        $notifySubLog = null;
+        $notifySubLogDays = isset($_ENV['notify_sublog_days']) ? (int)$_ENV['notify_sublog_days'] : null;
+        if ($notifySubLogDays !== null && $notifySubLogDays >= 0) {
+            $lastSubLogTime = $_COOKIE['noSubLogTip'] ?? null;
+            $notifySubLog = \App\Models\Notify::getSubLogNotify($this->user->id, $lastSubLogTime, $notifySubLogDays);
+        }
+
         return $response->write(
             $this->view()
                 ->assign('ssr_sub_token', $this->user->getSublink())
@@ -141,6 +158,8 @@ class UserController extends BaseController
                 ->assign('getUniversalSub', SubController::getUniversalSub($this->user))
                 ->assign('getClient', $token)
                 ->assign('data', $data)
+                ->assign('notifyAnn', $notifyAnn)
+                ->assign('notifySubLog', $notifySubLog)
                 ->display('user/index.tpl')
         );
     }

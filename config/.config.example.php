@@ -6,8 +6,7 @@
 //如需换行，直接换行即可，无需换行符
 //【新增/删除】config无需写入迁移附注
 $_ENV['config_migrate_notice'] =
-    '新增 enable_change_email 配置項
-新增 smtp_bbc 配置項
+    '新增公告及订阅提醒相关设置
 ';
 $_ENV['version'] = 2;    //仅当涉及【需要修改config以外的文件】时才需要+1，站长勿动
 
@@ -104,6 +103,10 @@ $_ENV['enable_change_email']        = true;         //是否允许用户更改�
 #用户流量余量不足邮件提醒
 $_ENV['notify_limit_mode']          = true;         //false为关闭，per为按照百分比提醒，mb为按照固定剩余流量提醒
 $_ENV['notify_limit_value']         = 20;           //当上一项为per时，此处填写百分比；当上一项为mb时，此处填写流量
+
+# 用户中心提醒设置
+$_ENV['notify_ann_days']            = 3;            //公告更新提醒阈值（天），小于0关闭
+$_ENV['notify_sublog_days']         = 5;            //订阅记录未更新提醒阈值（天），小于0关闭
 
 //订阅设置---------------------------------------------------------------------------------------
 $_ENV['Subscribe']                  = true;                         //本站是否提供订阅功能
