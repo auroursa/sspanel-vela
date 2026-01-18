@@ -86,6 +86,15 @@ function getCookie(name) {
 
 
 document.addEventListener('DOMContentLoaded', function() {
+  // 订阅记录提醒函数 - 定义在外部，确保始终存在
+  var showSubLogNotification = function() {
+    {if $notifySubLog}
+    if(getCookie('noSubLogTip') != '{$notifySubLog.last_time}') {
+      $("#notify-sublog-modal").modal({ldelim}backdrop: true, keyboard: true{rdelim});
+    }
+    {/if}
+  };
+  
   // 公告提醒 - 优先级更高
   {if $notifyAnn}
   var showAnnNotification = function() {
@@ -114,16 +123,15 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+  
+  showAnnNotification();
+  {else}
+  // 如果没有公告提醒，直接显示订阅通知
+  showSubLogNotification();
   {/if}
   
-  // 订阅记录提醒 - 优先级较低
   {if $notifySubLog}
-  var showSubLogNotification = function() {
-    if(getCookie('noSubLogTip') != '{$notifySubLog.last_time}') {
-      $("#notify-sublog-modal").modal({ldelim}backdrop: true, keyboard: true{rdelim});
-    }
-  };
-  
+  // 订阅记录提醒事件监听
   var sublogSwitch = document.getElementById('sublog_no_tip_switch');
   if (sublogSwitch) {
     sublogSwitch.checked = false;
@@ -135,13 +143,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
-  {/if}
-  
-  // 启动通知流程 - 优先显示公告，然后订阅通知
-  {if $notifyAnn}
-  showAnnNotification();
-  {elseif $notifySubLog}
-  showSubLogNotification();
   {/if}
 });
 </script>
