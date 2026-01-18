@@ -1,7 +1,7 @@
 {* notify.tpl 模块：公告和订阅记录提醒 *}
 {* 公告提醒 *}
 {if $notifyAnn}
-<div aria-hidden="true" class="modal modal-va-middle fade" id="notify-ann-modal" role="dialog" tabindex="-1">
+<div aria-hidden="true" class="modal fade" id="notify-ann-modal" role="dialog" tabindex="-1">
   <div class="modal-dialog modal-xs modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-heading">
@@ -33,7 +33,7 @@
 
 {* 订阅记录提醒 *}
 {if $notifySubLog}
-<div aria-hidden="true" class="modal modal-va-middle fade" id="notify-sublog-modal" role="dialog" tabindex="-1">
+<div aria-hidden="true" class="modal fade" id="notify-sublog-modal" role="dialog" tabindex="-1">
   <div class="modal-dialog modal-xs modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-heading">
@@ -54,8 +54,8 @@
           <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" 
               type="button">确定
           </button>
-          </br>
         </p>
+        </br>
       </div>
     </div>
   </div>
@@ -145,3 +145,19 @@ document.addEventListener('DOMContentLoaded', function() {
   {/if}
 });
 </script>
+
+<style>
+.modal.fade.show .modal-dialog-centered {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.modal.fade .modal-dialog-centered {
+  margin-top: 0 !important;
+}
+
+#notify-ann-modal .modal-dialog,
+#notify-sublog-modal .modal-dialog {
+  margin: auto !important;
+}
+</style>
