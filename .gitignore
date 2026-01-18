@@ -19,6 +19,9 @@ config/.config.php.bak
 config/appprofile.php
 config/ClientDownloadVersion.json
 
+certs/
+data/sockets
+
 public/mazer
 public/ssr-download/
 public/clients/

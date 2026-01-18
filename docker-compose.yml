@@ -1,26 +1,44 @@
-version: '3'
-
 services:
-    sspanel:
-        image: sspaneluim/panel
-        container_name: sspanel
-        restart: always
-        ports:
-            - 80:80
-        volumes:
-            - ./config/.config.php:/var/www/config/.config.php
-    mariadb:
-        image: mariadb:10.6
-        container_name: mariadb
-        restart: always
-        environment:
-          MYSQL_ROOT_PASSWORD: sspanel
+  nginx:
+    image: nginx
+    volumes:
+      - ./docker-nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./docker-site.conf:/etc/nginx/conf.d/default.conf:ro
+      #      - ./data/sockets/php8.3-fpm.sock:/run/php/php8.3-fpm.sock:ro
+      - ./:/var/www/html
+      - ./certs:/etc/nginx/certs
+    ports:
+      - "8081:443"
+    command: [ nginx, '-g', 'daemon off;' ]
 
-    phpmyadmin:
-        image: phpmyadmin
-        container_name: phpmyadmin
-        restart: always
-        ports:
-          - 8080:80
-        environment:
-          - PMA_ARBITRARY=1
+  sspanel:
+    build: .
+    depends_on:
+      - mariadb
+    volumes:
+      #      - ./data/sockets/php8.3-fpm.sock:/run/php/php8.2-fpm.sock
+      - ./data/sockets/mariadb:/var/run/mysqld:ro
+      - ./:/var/www/html
+
+  mariadb:
+    image: mariadb:10.11
+    environment:
+      MYSQL_ROOT_PASSWORD: examplepasswordboom
+      MYSQL_DATABASE: sspanel
+      MYSQL_USER: sspanel
+      MYSQL_PASSWORD: sspanel
+    #    ports:  # use socket instead
+    #      - "3306:3306"
+    volumes:
+      - ./data/sockets/mariadb:/var/run/mysqld
+      - ./sql/vela_all.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    # note: db data is ephemeral (not persistent between docker compose)
+
+volumes:
+  db:
+  site:
+
+networks:
+  default:
+    name: sspanel_network
+    driver: bridge
