@@ -176,11 +176,6 @@ document.addEventListener('DOMContentLoaded', function() {
     border-radius: 0.3rem;
   }
   
-  #notify-ann-modal .modal-heading,
-  #notify-sublog-modal .modal-heading {
-    padding: 1rem !important;
-  }
-  
   #notify-ann-modal .modal-inner,
   #notify-sublog-modal .modal-inner {
     padding: 1rem !important;
@@ -191,11 +186,6 @@ document.addEventListener('DOMContentLoaded', function() {
   #notify-ann-modal .modal-footer,
   #notify-sublog-modal .modal-footer {
     padding: 0.75rem !important;
-  }
-  
-  #notify-ann-modal .modal-title,
-  #notify-sublog-modal .modal-title {
-    font-size: 1rem !important;
   }
   
   #notify-ann-modal p,
@@ -216,11 +206,6 @@ document.addEventListener('DOMContentLoaded', function() {
   #notify-ann-modal .modal-dialog,
   #notify-sublog-modal .modal-dialog {
     max-width: 85vw !important;
-  }
-  
-  #notify-ann-modal .modal-heading,
-  #notify-sublog-modal .modal-heading {
-    padding: 0.75rem !important;
   }
   
   #notify-ann-modal .modal-title,
