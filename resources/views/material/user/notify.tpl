@@ -19,12 +19,11 @@
         <a href="/user/announcement" class="btn btn-flat btn-brand waves-attach" style="margin-top:16px;">查看公告</a>
       </div>
       <div class="modal-footer">
-        <p class="text-right" style="margin-bottom:0;">
+        <p class="text-right">
           <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" 
               type="button">确定
           </button>
         </p>
-        </br>
       </div>
     </div>
   </div>
@@ -50,12 +49,11 @@
         </div>
       </div>
       <div class="modal-footer">
-        <p class="text-right" style="margin-bottom:0;">
+        <p class="text-right">
           <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" 
               type="button">确定
           </button>
         </p>
-        </br>
       </div>
     </div>
   </div>
@@ -154,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .modal.fade .modal-dialog-centered {
-  margin-top: 0 !important;
+  margin-top: auto !important;
 }
 
 #notify-ann-modal .modal-dialog,
