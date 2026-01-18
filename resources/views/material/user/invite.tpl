@@ -149,7 +149,7 @@
                                                         <td>已注销</td>
                                                     {/if}
                                                     <td>{$payback->ref_get} 元</td>
-                                                    <td>{date('Y-m-d H:i:s', $payback->datetime)}</td>
+                                                    <td>{$payback->datetime|date_format:"%Y-%m-%d %H:%i:%s"}</td>
                                                 </tr>
                                             {/foreach}
                                         </table>

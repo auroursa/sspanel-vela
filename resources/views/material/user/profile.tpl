@@ -118,7 +118,7 @@
                                             {foreach $userloginip as $login}
                                                 <tr>
                                                     <td>{$login->ip}</td>
-                                                    <td>{date('Y-m-d H:i:s', $login->datetime)}</td>
+                                                    <td>{$login->datetime|date_format:"%Y-%m-%d %H:%i:%s"}</td>
                                                     <td>{Tools::getIpInfo($login->ip)}</td>
                                                 </tr>
                                             {/foreach}

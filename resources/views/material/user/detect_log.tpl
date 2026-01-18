@@ -51,7 +51,7 @@
                                                     {if $rule->type == 2}
                                                         <td>数据包 hex 匹配</td>
                                                     {/if}
-                                                    <td>{date('Y-m-d H:i:s',$log->datetime)}</td>
+                                                    <td>{$log->datetime|date_format:"%Y-%m-%d %H:%i:%s"}</td>
                                                 </tr>
                                             {/if}
                                         {/foreach}

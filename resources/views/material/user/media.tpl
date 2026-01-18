@@ -61,7 +61,7 @@
                                                         <td>{$result['unlock_item']['MyTVSuper']}
                                                         <td>{$result['unlock_item']['BBC']}</td>
                                                         <td>{$result['unlock_item']['Abema']}</td>
-                                                        <td>{date('Y-m-d H:i:s', $result['created_at'])}</td>
+                                                        <td>{$result['created_at']|date_format:"%Y-%m-%d %H:%i:%s"}</td>
                                                     </tr>
                                                 {/foreach}
                                             </tbody>
@@ -89,7 +89,7 @@
 </main>
 
 <script>
-    // https://article.docway.net/it/details/60f8c4b1791936603cddc187    
+    // https://article.docway.net/it/details/60f8c4b1791936603cddc187
     $("td:contains('Yes')").css("color", "green");
     $("td:contains('No')").css("color", "red");
     $("td:contains('Unknow')").css("color", "orange");

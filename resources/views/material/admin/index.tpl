@@ -39,9 +39,9 @@
                                 <div class="card-inner">
                                     <p>用户签到情况(总用户 {$sts->getTotalUser()}人)</p>
                                     <ul>
-                                        <li>没有签到过的用户: {number_format((1-($sts->getCheckinUser()/$sts->getTotalUser()))*100,2)}% ({$sts->getTotalUser()-$sts->getCheckinUser()}人)</li>
-                                        <li>曾经签到过的用户: {number_format((($sts->getCheckinUser()-$sts->getTodayCheckinUser())/$sts->getTotalUser())*100,2)}% ({$sts->getCheckinUser()-$sts->getTodayCheckinUser()}人)</li>
-                                        <li>今日签到用户: {number_format($sts->getTodayCheckinUser()/$sts->getTotalUser()*100,2)}% ({$sts->getTodayCheckinUser()}人)</li>
+                                        <li>没有签到过的用户: {((1-($sts->getCheckinUser()/$sts->getTotalUser()))*100)|string_format:"%.2f"}% ({$sts->getTotalUser()-$sts->getCheckinUser()}人)</li>
+                                        <li>曾经签到过的用户: {((($sts->getCheckinUser()-$sts->getTodayCheckinUser())/$sts->getTotalUser())*100)|string_format:"%.2f"}% ({$sts->getCheckinUser()-$sts->getTodayCheckinUser()}人)</li>
+                                        <li>今日签到用户: {($sts->getTodayCheckinUser()/$sts->getTotalUser()*100)|string_format:"%.2f"}% ({$sts->getTodayCheckinUser()}人)</li>
                                     </ul>
                                 </div>
                             </div>
@@ -51,11 +51,11 @@
                                 <div class="card-inner">
                                     <p>用户在线情况(总用户 {$sts->getTotalUser()}人)</p>
                                     <ul>
-                                        <li>从未在线的用户: {number_format((($sts->getUnusedUser()/$sts->getTotalUser()))*100,2)}% {(($sts->getUnusedUser()))}人</li>
-                                        <li>一天以前在线的用户: {number_format((($sts->getTotalUser()-$sts->getOnlineUser(86400)-$sts->getUnusedUser())/$sts->getTotalUser())*100,2)}% {($sts->getTotalUser()-$sts->getOnlineUser(86400)-$sts->getUnusedUser())}人</li>
-                                        <li>一天内在线的用户: {number_format(($sts->getOnlineUser(86400)-$sts->getOnlineUser(3600))/$sts->getTotalUser()*100,2)}% {($sts->getOnlineUser(86400)-$sts->getOnlineUser(3600))}人</li>
-                                        <li>一小时内在线的用户: {number_format(($sts->getOnlineUser(3600)-$sts->getOnlineUser(60))/$sts->getTotalUser()*100,2)}% {($sts->getOnlineUser(3600)-$sts->getOnlineUser(60))}人</li>
-                                        <li>一分钟内在线的用户: {number_format(($sts->getOnlineUser(60))/$sts->getTotalUser()*100,2)}% {($sts->getOnlineUser(60))}人</li>
+                                        <li>从未在线的用户: {((($sts->getUnusedUser()/$sts->getTotalUser()))*100)|string_format:"%.2f"}% {(($sts->getUnusedUser()))}人</li>
+                                        <li>一天以前在线的用户: {((($sts->getTotalUser()-$sts->getOnlineUser(86400)-$sts->getUnusedUser())/$sts->getTotalUser())*100)|string_format:"%.2f"}% {($sts->getTotalUser()-$sts->getOnlineUser(86400)-$sts->getUnusedUser())}人</li>
+                                        <li>一天内在线的用户: {(($sts->getOnlineUser(86400)-$sts->getOnlineUser(3600))/$sts->getTotalUser()*100)|string_format:"%.2f"}% {($sts->getOnlineUser(86400)-$sts->getOnlineUser(3600))}人</li>
+                                        <li>一小时内在线的用户: {(($sts->getOnlineUser(3600)-$sts->getOnlineUser(60))/$sts->getTotalUser()*100)|string_format:"%.2f"}% {($sts->getOnlineUser(3600)-$sts->getOnlineUser(60))}人</li>
+                                        <li>一分钟内在线的用户: {(($sts->getOnlineUser(60))/$sts->getTotalUser()*100)|string_format:"%.2f"}% {($sts->getOnlineUser(60))}人</li>
                                     </ul>
                                 </div>
                             </div>
@@ -68,8 +68,8 @@
                                     <p>节点在线情况(节点数 {$sts->getTotalNodes()}个)</p>
                                     <ul>
                                         {if $sts->getTotalNodes()!=0}
-                                        <li>离线节点: {number_format((1-($sts->getAliveNodes()/$sts->getTotalNodes()))*100,2)}% ({$sts->getTotalNodes()-$sts->getAliveNodes()}个)</li>
-                                        <li>在线节点: {number_format((($sts->getAliveNodes()/$sts->getTotalNodes()))*100,2)}% ({$sts->getAliveNodes()}个)</li>
+                                        <li>离线节点: {((1-($sts->getAliveNodes()/$sts->getTotalNodes()))*100)|string_format:"%.2f"}% ({$sts->getTotalNodes()-$sts->getAliveNodes()}个)</li>
+                                        <li>在线节点: {((($sts->getAliveNodes()/$sts->getTotalNodes()))*100)|string_format:"%.2f"}% ({$sts->getAliveNodes()}个)</li>
                                         {/if}
                                     </ul>
                                 </div>
@@ -81,9 +81,9 @@
                                     <p>流量使用情况(总分配流量 {$sts->getTotalTraffic()})</p>
                                     <ul>
                                         {if $sts->getRawTotalTraffic()!=0}
-                                        <li>总剩余可用: {number_format((($sts->getRawUnusedTrafficUsage()/$sts->getRawTotalTraffic()))*100,2)}% ({($sts->getUnusedTrafficUsage())})</li>
-                                        <li>总过去已用: {number_format((($sts->getRawLastTrafficUsage()/$sts->getRawTotalTraffic()))*100,2)}% ({($sts->getLastTrafficUsage())})</li>
-                                        <li>总今日已用: {number_format((($sts->getRawTodayTrafficUsage()/$sts->getRawTotalTraffic()))*100,2)}% ({($sts->getTodayTrafficUsage())})</li>
+                                        <li>总剩余可用: {((($sts->getRawUnusedTrafficUsage()/$sts->getRawTotalTraffic()))*100)|string_format:"%.2f"}% ({($sts->getUnusedTrafficUsage())})</li>
+                                        <li>总过去已用: {((($sts->getRawLastTrafficUsage()/$sts->getRawTotalTraffic()))*100)|string_format:"%.2f"}% ({($sts->getLastTrafficUsage())})</li>
+                                        <li>总今日已用: {((($sts->getRawTodayTrafficUsage()/$sts->getRawTotalTraffic()))*100)|string_format:"%.2f"}% ({($sts->getTodayTrafficUsage())})</li>
                                         {/if}
                                     </ul>
                                 </div>

@@ -129,7 +129,7 @@
     </div>
     <!-- 版权底部 -->
     <footer id="footer">
-        <p class="copyright">&copy;{date("Y")} {$config['appName']}</p>
+        <p class="copyright">&copy;{$smarty.now|date_format:"%Y"} {$config['appName']}</p>
     </footer>
     <!-- 版权结束 -->
 </div>

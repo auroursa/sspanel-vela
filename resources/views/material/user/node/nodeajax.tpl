@@ -10,7 +10,7 @@
                         <p>Loadavg {$prefix}</p>
                         <ul>
                             {foreach $load as $single_load}
-                            <li>时间: {date('Y-m-d H:i:s', $single_load->log_time)}, Load: {$single_load->getNodeLoad()}</li>
+                            <li>时间: {$single_load->log_time|date_format:"%Y-%m-%d %H:%i:%s"}, Load: {$single_load->getNodeLoad()}</li>
                             {/foreach}
                         </ul>
                     </div>
@@ -25,8 +25,8 @@
                     <div class="card-inner">
                         <p>最近一天节点在线情况 {$prefix} - 在线 {$point_node->getNodeUptime()}</p>
                         <ul>
-                            <li>在线率: {number_format($point_node->getNodeUpRate()*100,2)}%</li>
-                            <li>离线率: {number_format((1-$point_node->getNodeUpRate())*100,2)}%</li>
+                            <li>在线率: {($point_node->getNodeUpRate()*100)|string_format:"%.2f"}%</li>
+                            <li>离线率: {((1-$point_node->getNodeUpRate())*100)|string_format:"%.2f"}%</li>
                         </ul>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                         <p>最近一天节点在线人数情况 {$prefix}</p>
                         <ul>
                             {foreach $load as $single_load}
-                            <li>时间: {date('Y-m-d H:i:s', $single_load->log_time)}, 在线人数: {$single_load->online_user}</li>
+                            <li>时间: {$single_load->log_time|date_format:"%Y-%m-%d %H:%i:%s"}, 在线人数: {$single_load->online_user}</li>
                             {/foreach}
                         </ul>
                     </div>

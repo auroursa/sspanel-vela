@@ -419,7 +419,7 @@
                                                         使用方式：
                                                         <a class="btn-dl" href="{$subInfo['clash']}"><i class="material-icons icon-sm">send</i> 配置文件下载</a>
                                                         .
-                                                        <a class="btn-dl" href="clash://install-config?url={urlencode($subInfo['clash'])}"><i class="material-icons icon-sm">send</i> 配置一键导入</a>
+                                                        <a class="btn-dl" href="clash://install-config?url={$subInfo['clash']|escape:'url'}"><i class="material-icons icon-sm">send</i> 配置一键导入</a>
                                                     </p>
                                                 <hr/>
                                                 <p><span class="icon icon-lg text-white">filter_2</span> Netch：</p>
@@ -433,9 +433,9 @@
                                                         使用方式：
                                                         <a class="btn-dl" href="{$subInfo['clash']}"><i class="material-icons icon-sm">send</i> 配置文件下载</a>
                                                         .
-                                                        <a class="btn-dl" href="clash://install-config?url={urlencode($subInfo['clash'])}"><i class="material-icons icon-sm">send</i> 配置一键导入</a>
+                                                        <a class="btn-dl" href="clash://install-config?url={$subInfo['clash']|escape:'url'}"><i class="material-icons icon-sm">send</i> 配置一键导入</a>
                                                     </p>
-                                            {if array_key_exists('Windows',$config['userCenterClient'])}
+                                            {if isset($config['userCenterClient']['Windows'])}}
                                                 {if count($config['userCenterClient']['Windows']) != 0}
                                                     {printClient items=$config['userCenterClient']['Windows']}
                                                 {/if}
@@ -461,9 +461,9 @@
                                                         使用方式：
                                                         <a class="btn-dl" href="{$subInfo['clash']}"><i class="material-icons icon-sm">send</i> 配置文件下载</a>
                                                         .
-                                                        <a class="btn-dl" href="clash://install-config?url={urlencode($subInfo['clash'])}"><i class="material-icons icon-sm">send</i> 配置一键导入</a>
+                                                        <a class="btn-dl" href="clash://install-config?url={$subInfo['clash']|escape:'url'}"><i class="material-icons icon-sm">send</i> 配置一键导入</a>
                                                     </p>
-                                            {if array_key_exists('macOS',$config['userCenterClient'])}
+                                            {if isset($config['userCenterClient']['macOS'])}}
                                                 {if count($config['userCenterClient']['macOS']) != 0}
                                                     {printClient items=$config['userCenterClient']['macOS']}
                                                 {/if}
@@ -491,7 +491,7 @@
                                                 <p><span class="icon icon-lg text-white">filter_1</span> Surge：</p>
                                                     <p>
                                                         使用方式：
-                                                        <a class="btn-dl" href="surge3:///install-config?url={urlencode($subInfo['surge4'])}"><i class="material-icons icon-sm">send</i> 托管一键</a>
+                                                        <a class="btn-dl" href="surge3:///install-config?url={$subInfo['surge4']|escape:'url'}"><i class="material-icons icon-sm">send</i> 托管一键</a>
                                                         .
                                                         <a class="copy-text btn-dl" data-clipboard-text="{$subInfo['surge_node']}"><i class="material-icons icon-sm">send</i> 节点 List</a>
                                                     </p>
@@ -532,13 +532,13 @@
                                                 </p>
                                                 <p>
                                                     使用方式：
-                                                    <a class="btn-dl" href="stash://install-config?url={urlencode($subInfo['clash'])}"><i class="material-icons icon-sm">send</i> 一键导入 Stash</a>
+                                                    <a class="btn-dl" href="stash://install-config?url={$subInfo['clash']|escape:'url'}"><i class="material-icons icon-sm">send</i> 一键导入 Stash</a>
                                                     <!--
                                                     .
                                                     <a class="btn-dl" href="{$subInfo['clash']}"><i class="material-icons icon-sm">send</i> 配置文件下载</a>
                                                     -->
                                                 </p>
-                                            {if array_key_exists('iOS',$config['userCenterClient'])}
+                                            {if isset($config['userCenterClient']['iOS'])}}
                                                 {if count($config['userCenterClient']['iOS']) != 0}
                                                     {printClient items=$config['userCenterClient']['iOS']}
                                                 {/if}
@@ -582,9 +582,9 @@
                                                         使用方式：
                                                         <a class="copy-text btn-dl" data-clipboard-text="{$subInfo['clash']}"><i class="material-icons icon-sm">send</i> 拷贝 Clash 订阅链接</a>
                                                         .
-                                                        <a class="btn-dl" href="clash://install-config?url={urlencode($subInfo['clash'])}"><i class="material-icons icon-sm">send</i> 配置一键导入</a>
+                                                        <a class="btn-dl" href="clash://install-config?url={$subInfo['clash']|escape:'url'}"><i class="material-icons icon-sm">send</i> 配置一键导入</a>
                                                     </p>
-                                            {if array_key_exists('Android',$config['userCenterClient'])}
+                                            {if isset($config['userCenterClient']['Android'])}}
                                                 {if count($config['userCenterClient']['Android']) != 0}
                                                     {printClient items=$config['userCenterClient']['Android']}
                                                 {/if}
@@ -602,7 +602,7 @@
                                                         使用方式：
                                                         <a class="copy-text btn-dl" data-clipboard-text="{$subInfo['ssr']}"><i class="material-icons icon-sm">send</i> 拷贝订阅链接</a>
                                                     </p>
-                                            {if array_key_exists('Linux',$config['userCenterClient'])}
+                                            {if isset($config['userCenterClient']['Linux'])}}
                                                 {if count($config['userCenterClient']['Linux']) != 0}
                                                     {printClient items=$config['userCenterClient']['Linux']}
                                                 {/if}
@@ -622,7 +622,7 @@
                                                         .
                                                         <a class="copy-text btn-dl" data-clipboard-text="{$subInfo['v2ray']}"><i class="material-icons icon-sm">send</i> 拷贝 V2Ray 订阅链接</a>
                                                     </p>
-                                            {if array_key_exists('Router',$config['userCenterClient'])}
+                                            {if isset($config['userCenterClient']['Router'])}}
                                                 {if count($config['userCenterClient']['Router']) != 0}
                                                     {printClient items=$config['userCenterClient']['Router']}
                                                 {/if}

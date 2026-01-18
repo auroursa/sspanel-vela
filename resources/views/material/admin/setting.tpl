@@ -37,7 +37,7 @@
                                 </li>
                             </ul>
                         </nav>
-                                
+
                         <div class="card-inner">
                            <div class="tab-content">
                                 <div class="tab-pane fade" id="mail_settings">
@@ -63,7 +63,7 @@
                                             </li>
                                         </ul>
                                     </nav>
-                                            
+
                                     <div class="tab-pane fade active in" id="email_auth_settings">
                                         <!-- mail_driver -->
                                         <div class="form-group form-group-label">
@@ -88,7 +88,7 @@
                                             <p class="form-control-guide"><i class="material-icons">info</i>如需使用发信测试功能，请先在上方选择一个发信方式，并配置有效的相关参数</p>
                                             {/if}
                                         </div>
-                                        
+
                                         <button id="submit_email_test" type="submit" class="btn btn-brand btn-dense" {if $settings['mail_driver'] == "none"}disabled{/if}>测试</button>
                                     </div>
                                     <div class="tab-pane fade" id="email_backup_settings">
@@ -113,7 +113,7 @@
                                                 <option value="1" {if $settings['auto_backup_notify'] == "1"}selected{/if}>开启</option>
                                             </select>
                                         </div>
-                                        
+
                                         <button id="submit_email_backup" type="submit" class="btn btn-brand btn-dense">提交</button>
                                     </div>
                                     <div class="tab-pane fade" id="smtp">
@@ -242,9 +242,9 @@
                                             {/foreach}
                                         </ul>
                                     </nav>
-                                            
+
                                     <div class="tab-pane fade active in" id="public_payment_settings">
-                                        <!-- payment_gateway 
+                                        <!-- payment_gateway
                                         <div class="form-group form-group-label">
                                             <label class="floating-label">支付网关</label>
                                             <select id="payment_gateway" class="form-control maxwidth-edit">
@@ -270,7 +270,7 @@
 
                                         <button id="submit_payment" type="submit" class="btn btn-block btn-brand">提交</button>
                                     </div>
-                                    
+
                                     <div class="tab-pane fade" id="coinpay">
                                         <p class="form-control-guide"><i class="material-icons">info</i>此处申请： <a href="https://www.coinpayapp.com" target="view_window">https://www.coinpayapp.com</a></p>
                                         <!-- coinpay_appid -->
@@ -328,7 +328,7 @@
 
                                         <button id="submit_paymentwall" type="submit" class="btn btn-block btn-brand">提交</button>
                                     </div>
-                                    
+
                                     <div class="tab-pane fade" id="theadpay">
                                         <p class="form-control-guide"><i class="material-icons">info</i>此处申请：<a href="https://theadpay.com" target="view_window">https://theadpay.com</a></p>
                                         <!-- theadpay_url -->
@@ -395,7 +395,7 @@
 
                                         <button id="submit_stripe" type="submit" class="btn btn-block btn-brand">提交</button>
                                     </div>
-                                    
+
                                     <div class="tab-pane fade" id="vmqpay">
                                         <p class="form-control-guide"><i class="material-icons">info</i>此支付方式需自建网关并配置各项参数。访问 <a href="https://github.com/szvone/vmqphp" target="view_window">https://github.com/szvone/vmqphp</a> 了解更多</p>
                                         <p class="form-control-guide"><i class="material-icons">info</i>开源的 Android 监听端（推荐）：<a href="https://gitee.com/yuniks/VMQAPK" target="view_window">https://gitee.com/yuniks/VMQAPK</a></p>
@@ -411,10 +411,10 @@
                                             <label class="floating-label">V免签密钥</label>
                                             <input class="form-control maxwidth-edit" id="vmq_key" value="{$settings['vmq_key']}">
                                         </div>
-                                        
+
                                         <button id="submit_vmq_pay" type="submit" class="btn btn-block btn-brand">提交</button>
                                     </div>
-                                    
+
                                     <div class="tab-pane fade" id="f2fpay">
                                         <p class="form-control-guide"><i class="material-icons">info</i>此处申请： <a href="https://b.alipay.com/signing/productDetailV2.htm?productId=I1011000290000001003" target="view_window">https://b.alipay.com/signing/productDetailV2.htm?productId=I1011000290000001003</a></p>
                                         <!-- f2f_pay_app_id -->
@@ -444,7 +444,7 @@
                                             <input class="form-control maxwidth-edit" id="f2f_pay_notify_url" value="{$settings['f2f_pay_notify_url']}">
                                             <p class="form-control-guide"><i class="material-icons">info</i>此项可留空，不影响使用</p>
                                         </div>
-                                        
+
                                         <button id="submit_f2f_pay" type="submit" class="btn btn-block btn-brand">提交</button>
                                     </div>
                                 </div>
@@ -519,17 +519,17 @@
                                         <!-- admin_contact1 -->
                                         <div class="form-group form-group-label">
                                             <label class="floating-label">站长联系方式一</label>
-                                            <input class="form-control maxwidth-edit" id="admin_contact1" value="{htmlspecialchars($settings['admin_contact1'])}">
+                                            <input class="form-control maxwidth-edit" id="admin_contact1" value="{($settings['admin_contact1'])|escape}">
                                         </div>
                                         <!-- admin_contact2 -->
                                         <div class="form-group form-group-label">
                                             <label class="floating-label">站长联系方式二</label>
-                                            <input class="form-control maxwidth-edit" id="admin_contact2" value="{htmlspecialchars($settings['admin_contact2'])}">
+                                            <input class="form-control maxwidth-edit" id="admin_contact2" value="{($settings['admin_contact2'])|escape}">
                                         </div>
                                         <!-- admin_contact3 -->
                                         <div class="form-group form-group-label">
                                             <label class="floating-label">站长联系方式三</label>
-                                            <input class="form-control maxwidth-edit" id="admin_contact3" value="{htmlspecialchars($settings['admin_contact3'])}">
+                                            <input class="form-control maxwidth-edit" id="admin_contact3" value="{($settings['admin_contact3'])|escape}">
                                         </div>
 
                                         <button id="submit_admin_contact" type="submit" class="btn btn-block btn-brand">提交</button>
@@ -550,7 +550,7 @@
                                             </li>
                                         </ul>
                                     </nav>
-                                            
+
                                     <div class="tab-pane fade active in" id="verification_code_public_settings">
                                         <!-- captcha_provider -->
                                         <div class="form-group form-group-label">
@@ -627,7 +627,7 @@
                                             </li>
                                         </ul>
                                     </nav>
-                                            
+
                                     <div class="tab-pane fade active in" id="custom_background_image">
                                         <p class="form-control-guide"><i class="material-icons">info</i>默认背景图片地址：/theme/material/css/images/bg/amber.jpg <a href="/theme/material/css/images/bg/amber.jpg">预览</a></p>
                                         <p class="form-control-guide"><i class="material-icons">info</i>自带背景图片一地址：/theme/material/css/images/bg/streak.jpg <a href="/theme/material/css/images/bg/streak.jpg">预览</a></p>
@@ -675,7 +675,7 @@
                                             </li>
                                         </ul>
                                     </nav>
-                                            
+
                                     <div class="tab-pane fade active in" id="reg_mode_and_verify">
                                         <!-- reg_mode -->
                                         <div class="form-group form-group-label">
@@ -797,7 +797,7 @@
                                             </li>
                                         </ul>
                                     </nav>
-                                            
+
                                     <div class="tab-pane fade active in" id="rebate_mode">
                                         <!-- invitation_mode -->
                                         <div class="form-group form-group-label">
@@ -850,7 +850,7 @@
                                         </div>
                                         <p class="form-control-guide"><i class="material-icons">info</i>例如：设置为 10 时，一个被邀请用户先后购买了售价为 10，20，50，100 的商品，若返点设置为 20% ，则第一次购买返利为 2；第二次为 4；第三次为 4；第四次及之后的购买，邀请人所能获得的返利均为 0（假设设置为在购买时返利）</p>
                                         <p class="form-control-guide"><i class="material-icons">info</i>在进行第三次返利计算时，按设置应返利订单金额的 20% ，即 10 元。但因已获得历史返利 6 元，则只能获得返利总金额限制与历史返利的差值</p>
-                                        
+
                                         <br/><button id="submit_rebate_mode" type="submit" class="btn btn-block btn-brand">提交</button>
                                     </div>
 
@@ -924,7 +924,7 @@
                 var {$value} = 0;
             }
             {/foreach}
-            
+
             $.ajax({
                 type: "POST",
                 url: "/admin/setting/payment",
