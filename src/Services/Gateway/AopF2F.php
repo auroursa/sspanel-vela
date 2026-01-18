@@ -24,7 +24,8 @@ class AopF2F extends AbstractPayment
 
     public static function _enable() 
     {
-        return self::getActiveGateway('f2fpay');
+        // Alipay 支海已禁用，依赖 lokielse/omnipay-alipay 已罪去
+        return false;
     }
 
     public static function _readableName() {
@@ -33,19 +34,7 @@ class AopF2F extends AbstractPayment
 
     private function createGateway()
     {
-        $configs = Setting::getClass('f2f');
-        $gateway = Omnipay::create('Alipay_AopF2F');
-        $gateway->setSignType('RSA2'); //RSA/RSA2
-        $gateway->setAppId($configs['f2f_pay_app_id']);
-        $gateway->setPrivateKey($configs['f2f_pay_private_key']); // 可以是路径，也可以是密钥内容
-        $gateway->setAlipayPublicKey($configs['f2f_pay_public_key']); // 可以是路径，也可以是密钥内容
-        if ($configs['f2f_pay_notify_url'] == '') {
-            $notifyUrl = self::getCallbackUrl();
-        } else {
-            $notifyUrl = $configs['f2f_pay_notify_url'];
-        }
-        $gateway->setNotifyUrl($notifyUrl);
-        return $gateway;
+        throw new Exception('Alipay payment gateway has been disabled. The dependency "lokielse/omnipay-alipay" is no longer available.');
     }
 
 

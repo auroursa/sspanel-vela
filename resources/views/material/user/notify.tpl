@@ -20,7 +20,9 @@
       </div>
       <div class="modal-footer">
         <p class="text-right" style="margin-bottom:0;">
-          <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button">确定</button>
+          <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" 
+              type="button">确定
+          </button>
         </p>
       </div>
     </div>
@@ -48,7 +50,9 @@
       </div>
       <div class="modal-footer">
         <p class="text-right" style="margin-bottom:0;">
-          <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button">确定</button>
+          <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" 
+              type="button">确定
+          </button>
         </p>
       </div>
     </div>
@@ -83,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // 公告提醒
   {if $notifyAnn}
   if(getCookie('noAnnTip') != '{$notifyAnn.date}') {
-    $("#notify-ann-modal").modal({backdrop: true, keyboard: true});
+    $("#notify-ann-modal").modal({ldelim}backdrop: true, keyboard: true{rdelim});
   }
   var annSwitch = document.getElementById('ann_no_tip_switch');
   if (annSwitch) {
@@ -98,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // 订阅记录提醒
   {if $notifySubLog}
   if(getCookie('noSubLogTip') != '{$notifySubLog.last_time}') {
-    $("#notify-sublog-modal").modal({backdrop: true, keyboard: true});
+    $("#notify-sublog-modal").modal({ldelim}backdrop: true, keyboard: true{rdelim});
   }
   var sublogSwitch = document.getElementById('sublog_no_tip_switch');
   if (sublogSwitch) {
