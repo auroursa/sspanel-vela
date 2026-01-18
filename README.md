@@ -3,7 +3,7 @@ Forked from [SSPanel UIM](https://github.com/Anankke/SSPanel-Uim)
 Web panel for Shadowsocks & ShadowsocksR and V2Ray, based on ss-panel-v3-mod.
 
 ## Requirements
-- ✅ PHP 7.2+
+- ✅ PHP 8.0+
 - ✅ Composer
 - ✅ MariaDB / MySQL
 - ✅ Nginx (or other web server supports PHP-CGI)
