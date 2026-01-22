@@ -316,7 +316,7 @@
                                 <p>在没有测试完成绑定成功之前请不要启用。</p>
                                 <p>当前设置：<code data-default="ga-enable">{if $user->ga_enable==1} 要求验证 {else} 不要求 {/if}</code>
                                 </p>
-                                <p>当前服务器时间：{$smarty.now|date_format:"%Y-%m-%d %H:%i:%s"}</p>
+                                <p>当前服务器时间：{$smarty.now|date_format:"%Y-%m-%d %H:%M:%S"}</p>
                                 <div class="form-group form-group-label control-highlight-custom dropdown">
                                     <label class="floating-label" for="ga-enable">验证设置</label>
                                     <button type="button" id="ga-enable" class="form-control maxwidth-edit"

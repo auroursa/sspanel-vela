@@ -10,7 +10,8 @@
                         <p>Loadavg {$prefix}</p>
                         <ul>
                             {foreach $load as $single_load}
-                            <li>时间: {$single_load->log_time|date_format:"%Y-%m-%d %H:%i:%s"}, Load: {$single_load->getNodeLoad()}</li>
+                                <li>时间: {$single_load->log_time|date_format:"%Y-%m-%d %H:%M:%S"},
+                                    Load: {$single_load->getNodeLoad()}</li>
                             {/foreach}
                         </ul>
                     </div>
@@ -41,7 +42,8 @@
                         <p>最近一天节点在线人数情况 {$prefix}</p>
                         <ul>
                             {foreach $load as $single_load}
-                            <li>时间: {$single_load->log_time|date_format:"%Y-%m-%d %H:%i:%s"}, 在线人数: {$single_load->online_user}</li>
+                                <li>时间: {$single_load->log_time|date_format:"%Y-%m-%d %H:%M:%S"},
+                                    在线人数: {$single_load->online_user}</li>
                             {/foreach}
                         </ul>
                     </div>

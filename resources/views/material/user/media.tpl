@@ -39,7 +39,7 @@
                                                     {if $key != 'BilibiliChinaMainland'}
                                                         {if $key == 'BilibiliHKMCTW'}
                                                             <th>港澳台B站</th>
-                                                        {else if $key == 'BilibiliTW'}
+                                                        {elseif $key == 'BilibiliTW'}
                                                             <th>台湾B站</th>
                                                         {else}
                                                             <th>{$key}</th>
@@ -61,7 +61,7 @@
                                                         <td>{$result['unlock_item']['MyTVSuper']}
                                                         <td>{$result['unlock_item']['BBC']}</td>
                                                         <td>{$result['unlock_item']['Abema']}</td>
-                                                        <td>{$result['created_at']|date_format:"%Y-%m-%d %H:%i:%s"}</td>
+                                                        <td>{$result['created_at']|date_format:"%Y-%m-%d %H:%M:%S"}</td>
                                                     </tr>
                                                 {/foreach}
                                             </tbody>
