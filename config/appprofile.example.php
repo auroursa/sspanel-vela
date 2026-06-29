@@ -39,7 +39,7 @@ $_ENV['Surge_Profiles'] = [
                     'right-proxies' => [
                         '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -49,7 +49,8 @@ $_ENV['Surge_Profiles'] = [
                     'left-proxies' => [
                         '直接连接',
                         '境外流量'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -57,9 +58,10 @@ $_ENV['Surge_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -67,9 +69,10 @@ $_ENV['Surge_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -77,9 +80,10 @@ $_ENV['Surge_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -90,7 +94,7 @@ $_ENV['Surge_Profiles'] = [
                         '境外流量',
                         '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -101,7 +105,7 @@ $_ENV['Surge_Profiles'] = [
                         '直接连接',
                         '境外流量'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -112,7 +116,7 @@ $_ENV['Surge_Profiles'] = [
                         '直接连接',
                         '境外流量'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -122,7 +126,8 @@ $_ENV['Surge_Profiles'] = [
                     'left-proxies' => [
                         '直接连接',
                         '境外流量'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -130,9 +135,10 @@ $_ENV['Surge_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -140,9 +146,10 @@ $_ENV['Surge_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -150,9 +157,10 @@ $_ENV['Surge_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -160,9 +168,10 @@ $_ENV['Surge_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -170,9 +179,10 @@ $_ENV['Surge_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -180,9 +190,10 @@ $_ENV['Surge_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '直接连接'
+                        '直接连接',
+                        '境外流量'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -190,9 +201,10 @@ $_ENV['Surge_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -202,7 +214,8 @@ $_ENV['Surge_Profiles'] = [
                     'left-proxies' => [
                         '直接连接',
                         '境外流量'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -212,7 +225,8 @@ $_ENV['Surge_Profiles'] = [
                     'left-proxies' => [
                         '境外流量',
                         '直接连接'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ]
         ],
@@ -248,7 +262,7 @@ $_ENV['Surge2_Profiles'] = [
                     'right-proxies' => [
                         '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -258,7 +272,8 @@ $_ENV['Surge2_Profiles'] = [
                     'left-proxies' => [
                         '直接连接',
                         '境外流量'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -266,9 +281,10 @@ $_ENV['Surge2_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -276,9 +292,10 @@ $_ENV['Surge2_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -286,9 +303,10 @@ $_ENV['Surge2_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -299,7 +317,7 @@ $_ENV['Surge2_Profiles'] = [
                         '境外流量',
                         '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -310,7 +328,7 @@ $_ENV['Surge2_Profiles'] = [
                         '直接连接',
                         '境外流量'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -321,7 +339,7 @@ $_ENV['Surge2_Profiles'] = [
                         '直接连接',
                         '境外流量'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -331,7 +349,8 @@ $_ENV['Surge2_Profiles'] = [
                     'left-proxies' => [
                         '直接连接',
                         '境外流量'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -339,9 +358,10 @@ $_ENV['Surge2_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -349,9 +369,10 @@ $_ENV['Surge2_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -359,9 +380,10 @@ $_ENV['Surge2_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -369,9 +391,10 @@ $_ENV['Surge2_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -379,9 +402,10 @@ $_ENV['Surge2_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -389,9 +413,10 @@ $_ENV['Surge2_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '直接连接'
+                        '直接连接',
+                        '境外流量'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -399,9 +424,10 @@ $_ENV['Surge2_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -411,7 +437,8 @@ $_ENV['Surge2_Profiles'] = [
                     'left-proxies' => [
                         '直接连接',
                         '境外流量'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -421,7 +448,8 @@ $_ENV['Surge2_Profiles'] = [
                     'left-proxies' => [
                         '境外流量',
                         '直接连接'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ]
         ],
@@ -477,7 +505,7 @@ $_ENV['Clash_Profiles'] = [
                     'right-proxies' => [
                         '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -487,7 +515,8 @@ $_ENV['Clash_Profiles'] = [
                     'left-proxies' => [
                         '直接连接',
                         '境外流量'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -495,9 +524,10 @@ $_ENV['Clash_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -505,9 +535,10 @@ $_ENV['Clash_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -515,9 +546,10 @@ $_ENV['Clash_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -528,7 +560,7 @@ $_ENV['Clash_Profiles'] = [
                         '境外流量',
                         '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -539,7 +571,7 @@ $_ENV['Clash_Profiles'] = [
                         '直接连接',
                         '境外流量'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -550,7 +582,7 @@ $_ENV['Clash_Profiles'] = [
                         '直接连接',
                         '境外流量'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -560,7 +592,8 @@ $_ENV['Clash_Profiles'] = [
                     'left-proxies' => [
                         '直接连接',
                         '境外流量'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -568,9 +601,10 @@ $_ENV['Clash_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -578,9 +612,10 @@ $_ENV['Clash_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -588,9 +623,10 @@ $_ENV['Clash_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -598,9 +634,10 @@ $_ENV['Clash_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -608,9 +645,10 @@ $_ENV['Clash_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -618,9 +656,10 @@ $_ENV['Clash_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '直接连接'
+                        '直接连接',
+                        '境外流量'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -628,9 +667,10 @@ $_ENV['Clash_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -640,7 +680,8 @@ $_ENV['Clash_Profiles'] = [
                     'left-proxies' => [
                         '直接连接',
                         '境外流量'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -650,7 +691,8 @@ $_ENV['Clash_Profiles'] = [
                     'left-proxies' => [
                         '境外流量',
                         '直接连接'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -700,7 +742,7 @@ $_ENV['Surfboard_Profiles'] = [
                     'right-proxies' => [
                         '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -710,7 +752,8 @@ $_ENV['Surfboard_Profiles'] = [
                     'left-proxies' => [
                         '直接连接',
                         '境外流量'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -718,9 +761,10 @@ $_ENV['Surfboard_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -728,9 +772,10 @@ $_ENV['Surfboard_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -738,9 +783,10 @@ $_ENV['Surfboard_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -751,7 +797,7 @@ $_ENV['Surfboard_Profiles'] = [
                         '境外流量',
                         '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -762,7 +808,7 @@ $_ENV['Surfboard_Profiles'] = [
                         '直接连接',
                         '境外流量'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -773,7 +819,7 @@ $_ENV['Surfboard_Profiles'] = [
                         '直接连接',
                         '境外流量'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -783,7 +829,8 @@ $_ENV['Surfboard_Profiles'] = [
                     'left-proxies' => [
                         '直接连接',
                         '境外流量'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -791,9 +838,10 @@ $_ENV['Surfboard_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -801,9 +849,10 @@ $_ENV['Surfboard_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -811,9 +860,10 @@ $_ENV['Surfboard_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -821,9 +871,10 @@ $_ENV['Surfboard_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -831,9 +882,10 @@ $_ENV['Surfboard_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -841,9 +893,10 @@ $_ENV['Surfboard_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '直接连接'
+                        '直接连接',
+                        '境外流量'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -851,9 +904,10 @@ $_ENV['Surfboard_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '境外流量'
+                        '境外流量',
+                        '直接连接'
                     ],
-                    'regex' => '(.*)',
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -863,7 +917,8 @@ $_ENV['Surfboard_Profiles'] = [
                     'left-proxies' => [
                         '直接连接',
                         '境外流量'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ],
             [
@@ -873,7 +928,8 @@ $_ENV['Surfboard_Profiles'] = [
                     'left-proxies' => [
                         '境外流量',
                         '直接连接'
-                    ]
+                    ],
+                    'regex' => '(.*)'
                 ]
             ],
             [
