@@ -958,8 +958,8 @@ DOMAIN-SUFFIX,claudeusercontent.com,GPT
 DOMAIN-SUFFIX,claudemcpclient.com,GPT
 DOMAIN-SUFFIX,trust.anthropic.com,GPT
 DOMAIN-SUFFIX,statsigapi.net,GPT
-IP-CIDR,160.79.104.0/21,no-resolve,GPT
-IP-CIDR6,2607:6bc0::/32,no-resolve,GPT
+IP-CIDR,160.79.104.0/21,GPT
+IP-CIDR6,2607:6bc0::/32,GPT
 
 # > OpenAI / ChatGPT
 DOMAIN,auth0.openai.com,GPT
