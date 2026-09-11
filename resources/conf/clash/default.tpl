@@ -959,14 +959,104 @@
   - DOMAIN,guzzoni.apple.com,GPT
   - DOMAIN,api.smoot.apple.com,Apple_API
 
-  - DOMAIN-SUFFIX,openai.com,GPT
-  - DOMAIN-SUFFIX,auth0.com,GPT
   - DOMAIN-SUFFIX,bing.com,GPT
   - DOMAIN-SUFFIX,sentry.io,GPT
-  - DOMAIN-SUFFIX,chatgpt.com,GPT
-  - DOMAIN-SUFFIX,claude.ai,GPT
+
+  # > Claude / Anthropic 核心
+  - DOMAIN,api.anthropic.com,GPT
+  - DOMAIN,cdn.anthropic.com,GPT
+  - DOMAIN,mcp.anthropic.com,GPT
+  - DOMAIN,console.anthropic.com,GPT
+  - DOMAIN,workbench.anthropic.com,GPT
+  - DOMAIN,platform.claude.com,GPT
+  - DOMAIN,code.claude.com,GPT
+  - DOMAIN,support.claude.com,GPT
+  - DOMAIN,status.claude.com,GPT
+  - DOMAIN,downloads.claude.ai,GPT
+  - DOMAIN,anthropic.auth0.com,GPT
+  - DOMAIN,anthropic-com.ghost.io,GPT
+  - DOMAIN,statsig.anthropic.com,GPT
+  - DOMAIN,cdn.usefathom.com,GPT
+  - DOMAIN,browser-intake-us5-datadoghq.com,GPT
+  - DOMAIN,anthropic.com.cdn.cloudflare.net,GPT
+  - DOMAIN,servd-anthropic-website.b-cdn.net,GPT
   - DOMAIN-SUFFIX,anthropic.com,GPT
-  - DOMAIN,proactivebackend-pa.googleapis.com,GPT
+  - DOMAIN-SUFFIX,claude.ai,GPT
+  - DOMAIN-SUFFIX,claude.com,GPT
+  - DOMAIN-SUFFIX,clau.de,GPT
+  - DOMAIN-SUFFIX,claudeusercontent.com,GPT
+  - DOMAIN-SUFFIX,claudemcpclient.com,GPT
+  - DOMAIN-SUFFIX,trust.anthropic.com,GPT
+  - DOMAIN-SUFFIX,statsigapi.net,GPT
+  - IP-CIDR,160.79.104.0/21,no-resolve,GPT
+  - IP-CIDR6,2607:6bc0::/32,no-resolve,GPT
+
+  # > OpenAI / ChatGPT
+  - DOMAIN,auth0.openai.com,GPT
+  - DOMAIN,pay.openai.com,GPT
+  - DOMAIN,platform.openai.com,GPT
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net,GPT
+  - DOMAIN,openaiapi-site.azureedge.net,GPT
+  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,GPT
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,GPT
+  - DOMAIN,production-openaicom-storage.azureedge.net,GPT
+  - DOMAIN,browser-intake-datadoghq.com,GPT
+  - DOMAIN,openai-api.arkoselabs.com,GPT
+  - DOMAIN-SUFFIX,ai.com,GPT
+  - DOMAIN-SUFFIX,chatgpt.com,GPT
+  - DOMAIN-SUFFIX,openai.com,GPT
+  - DOMAIN-SUFFIX,oaistatic.com,GPT
+  - DOMAIN-SUFFIX,oaiusercontent.com,GPT
+  - DOMAIN-SUFFIX,events.statsigapi.net,GPT
+  - DOMAIN-SUFFIX,featuregates.org,GPT
+  - DOMAIN-SUFFIX,identrust.com,GPT
+  - DOMAIN-SUFFIX,arkoselabs.com,GPT
+
+  # > Gemini / Google AI
+  - DOMAIN,ai.google.dev,GPT
+  - DOMAIN,alkalimakersuite-pa.clients6.google.com,GPT
+  - DOMAIN,makersuite.google.com,GPT
+  - DOMAIN,aistudio.google.com,GPT
+  - DOMAIN,aistudio-pa.clients6.google.com,GPT
+  - DOMAIN-SUFFIX,bard.google.com,GPT
+  - DOMAIN-SUFFIX,gemini.google.com,GPT
+  - DOMAIN-SUFFIX,gemini-pa.googleapis.com,GPT
+  - DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com,GPT
+  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com,GPT
+  - DOMAIN-SUFFIX,generativelanguage.googleapis.com,GPT
+  - DOMAIN-SUFFIX,generativeai.google,GPT
+  - DOMAIN-SUFFIX,deepmind.com,GPT
+  - DOMAIN-SUFFIX,deepmind.google,GPT
+
+  # > GitHub Copilot / GitHub AI
+  - DOMAIN,api.githubcopilot.com,GPT
+  - DOMAIN,origin-tracker.githubusercontent.com,GPT
+  - DOMAIN-SUFFIX,githubcopilot.com,GPT
+  - DOMAIN-SUFFIX,githubcopilotusercontent.com,GPT
+  - DOMAIN-SUFFIX,copilot.microsoft.com,GPT
+  - DOMAIN-SUFFIX,business.githubcopilot.com,GPT
+  # - DOMAIN-KEYWORD,copilot,GPT
+
+  # > xAI / Grok
+  - DOMAIN-SUFFIX,x.ai,GPT
+  - DOMAIN-SUFFIX,grok.com,GPT
+
+  # > Perplexity
+  - DOMAIN-SUFFIX,perplexity.ai,GPT
+  - DOMAIN-SUFFIX,perplexity.com,GPT
+
+  # > Poe
+  - DOMAIN-SUFFIX,poe.com,GPT
+  - DOMAIN-SUFFIX,poecdn.net,GPT
+
+  # > Meta AI
+  - DOMAIN-SUFFIX,meta.ai,GPT
+
+  # > 其他常见 AI 平台
+  - DOMAIN-SUFFIX,groq.com,GPT
+  - DOMAIN-SUFFIX,mistral.ai,GPT
+  - DOMAIN-SUFFIX,lechat.ai,GPT
+  - DOMAIN-SUFFIX,notebooklm.google.com,GPT
 
   # > GitHub
   - DOMAIN-SUFFIX,github.blog,境外流量
